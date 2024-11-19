@@ -265,7 +265,7 @@ body {
 }
 .Coın-swap .coin-text .coin-swap-title {
   color: #fff;
-  font-size: 54px;
+  font-size: clamp(24px, 7vw, 54px);
   line-height: 60px;
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
@@ -725,4 +725,8 @@ body {
   width: 100%;
   background: transparent;
   border: 1px solid #1f1963;
+}
+
+#todoAddButton {
+  border: none;
 }/*# sourceMappingURL=style.css.map */
