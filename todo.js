@@ -72,3 +72,30 @@ function showAlert(type, message){
     div.remove();
    },2500);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const ogeButton = document.querySelector("#todoAddButton");
+
+  // Başlangıç stili
+  ogeButton.style.color = "white";
+  ogeButton.style.background = "#FF06B7";
+  ogeButton.style.paddingTop = "16px";
+  ogeButton.style.paddingBottom = "16px";
+  ogeButton.style.paddingLeft = "20px";
+  ogeButton.style.paddingRight = "20px";
+  ogeButton.style.fontWeight = "bold";
+
+  // Olay dinleyicileri
+  ogeButton.addEventListener("mouseover", runbutton);
+  ogeButton.addEventListener("mouseout", runbuttons);
+
+  function runbutton() {
+      ogeButton.style.transform = "scale(1.1)";
+      ogeButton.style.color = "black";
+  }
+
+  function runbuttons() {
+      ogeButton.style.transform = "scale(1)";
+      ogeButton.style.color = "white";
+  }
+});
