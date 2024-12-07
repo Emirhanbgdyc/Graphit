@@ -87,7 +87,7 @@ body {
 
 .home-main .home-section-left-text .home-title {
   font-size: clamp(24px, 7vw, 70px );
-  line-height: 70px;
+  line-height: clamp(24px, 10vw, 70px);
 
   /* max-width: 100%; */
   height: auto;
@@ -243,10 +243,9 @@ body {
     }
     .coin-swap-title {
       color: $white-color;
-      font-size: clamp(24px, 7vw, 54px);
-      line-height: 60px;
-      // width: 540px;
-      // height: 180px;
+      font-size: clamp(24px, 7vw, 52px);
+      line-height: clamp(24px, 8vw, 60px);
+      width: 340px;
       font-weight: bold;
       font-family: "Josefin Sans", sans-serif;
       span {
@@ -256,11 +255,12 @@ body {
     .coin-p {
       color: $coin-h5-color;
       margin-top: 20px;
-      font-size: 18px;
-      line-height: 28px;
-      max-width: 540px;
-      max-height: 140px;
+      font-size: clamp(16px, 1.125rem, 18px); // Minimum 16px, ideal 1.125rem, maksimum 18px
+      line-height: clamp(24px, 1.75rem, 28px); // Minimum 24px, ideal 1.75rem, maksimum 28px
+      width: clamp(300px, 50%, 1040px);
+      max-height: clamp(100px, 10vh, 140px); 
     }
+    
   }
 
   //Sağ Taraf
@@ -578,13 +578,12 @@ body {
 }
 
 .wallet-wrapper .wallet-text h2 {
-  font-size: 56px;
+  font-size: clamp(24px, 7vw, 56px);
   color: $white-color;
-  line-height: 64px;
-  max-width: 540px;
+  line-height: clamp(32px, 8vw, 64px); 
+  max-width: clamp(320px, 50%, 540px);
   font-weight: bold;
 }
-
 .wallet-wrapper .wallet-text p {
   color: $white-color;
   font-size: 18px;

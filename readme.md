@@ -48,3 +48,7 @@ Projede kullanılan teknolojiler ve diller şunlardır:
 1. Projeyi bilgisayarınıza klonlayın:
    ```bash
    git clone git@github.com:Emirhanbgdyc/Graphit.git
+
+## Lisans
+
+   Bu proje [MIT Lisansı](./LICENSE) altında lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.

@@ -25,6 +25,23 @@
   padding: 100px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .about-us .about-img img {
+    margin-bottom: 30px;
+  }
+  .currency-box {
+    margin-top: 70px;
+    margin-bottom: 130px;
+  }
+  .block-section {
+    height: auto;
+    background-color: #080a30;
+    padding-top: 200px;
+  }
+  .wallet-wrapper .wallet-text h2 {
+    font-size: clamp(24px, 7vw, 50px) !important;
+  }
+}
 body {
   background-image: url("https://shtheme.com/demosd/graphbit/wp-content/uploads/2023/04/bg5.png");
 }
@@ -114,7 +131,7 @@ body {
 
 .home-main .home-section-left-text .home-title {
   font-size: clamp(24px, 7vw, 70px);
-  line-height: 70px;
+  line-height: clamp(24px, 10vw, 70px);
   /* max-width: 100%; */
   height: auto;
   font-weight: 700;
@@ -265,8 +282,9 @@ body {
 }
 .Coın-swap .coin-text .coin-swap-title {
   color: #fff;
-  font-size: clamp(24px, 7vw, 54px);
-  line-height: 60px;
+  font-size: clamp(24px, 7vw, 52px);
+  line-height: clamp(24px, 8vw, 60px);
+  width: 340px;
   font-weight: bold;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -276,10 +294,10 @@ body {
 .Coın-swap .coin-text .coin-p {
   color: #DDDDDD;
   margin-top: 20px;
-  font-size: 18px;
-  line-height: 28px;
-  max-width: 540px;
-  max-height: 140px;
+  font-size: clamp(16px, 1.125rem, 18px);
+  line-height: clamp(24px, 1.75rem, 28px);
+  width: clamp(300px, 50%, 1040px);
+  max-height: clamp(100px, 10vh, 140px);
 }
 .Coın-swap .currency-box {
   margin-top: 100px;
@@ -583,10 +601,10 @@ body {
 }
 
 .wallet-wrapper .wallet-text h2 {
-  font-size: 56px;
+  font-size: clamp(24px, 7vw, 56px);
   color: #fff;
-  line-height: 64px;
-  max-width: 540px;
+  line-height: clamp(32px, 8vw, 64px);
+  max-width: clamp(320px, 50%, 540px);
   font-weight: bold;
 }
 
